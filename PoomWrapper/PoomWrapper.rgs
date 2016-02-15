@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'PoomWrapper'
+		'PoomWrapper.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

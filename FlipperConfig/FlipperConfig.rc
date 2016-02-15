@@ -1,0 +1,206 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGEAPPEARANCE DIALOG  0, 0, 161, 139
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Disable Flipper",IDC_CHECK_DISABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,120,144,10
+    CONTROL         "Enable Animations",IDC_CHECK_ENABLEANIMATIONS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,143,10
+    CONTROL         "Auto Hide Flipper Tabs",IDC_CHECK_AUTOHIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,19,143,10
+    LTEXT           "Tab Alignment",IDC_STATIC_ALIGN,7,32,55,13
+    COMBOBOX        IDC_COMBO_ALIGNMENT,67,32,84,60,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Tab Size",IDC_STATIC_SIZE,7,48,55,13
+    COMBOBOX        IDC_COMBO_SIZE,67,48,84,60,CBS_DROPDOWNLIST | WS_TABSTOP
+END
+
+IDD_PROPPAGEITEMS DIALOG  0, 0, 162, 140
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_LIST_ITEMS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,105,99
+    PUSHBUTTON      "Move Up",IDC_BUTTON_MOVEUP,117,7,38,14,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Move Down",IDC_BUTTON_MOVEDOWN,117,21,38,14,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Options",IDC_BUTTON_OPTIONS,117,50,38,14,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE,117,36,38,14,BS_NOTIFY | WS_DISABLED
+    LISTBOX         IDC_LIST_COLORS,7,109,105,22,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,117,117,38,14,BS_NOTIFY
+END
+
+IDD_REGISTER_DIALOG DIALOG  0, 0, 161, 139
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register Flipper"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_PPC_ID,53,7,100,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Owner:",IDC_STATIC_OWNER,7,7,27,10
+    EDITTEXT        IDC_KEY,53,22,100,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Code:",IDC_STATIC_CODE,7,22,24,10
+    PUSHBUTTON      "Register",IDC_REGISTER_BUTTON,7,44,146,15
+    PUSHBUTTON      "Run in Demo Mode",IDC_DEMO_BUTTON,7,61,146,15
+    CONTROL         "SIP2",IDC_SIP2,"SIPPREF",NOT WS_VISIBLE | WS_TABSTOP,73,111,14,14
+END
+
+IDD_ADD_DIALOG DIALOG  0, 0, 161, 165
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Plugin"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         IDC_LIST_PLUGINS,7,7,146,149,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROPPAGEAPPEARANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_PROPPAGEITEMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_REGISTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+    END
+
+    IDD_ADD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "images\\app.ico"
+APPLET_ICON             ICON                    "..\\flippersettings.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_Flipper_SET_MENUBAR RCDATA 
+BEGIN
+    0x0190, 0x0002, 0xfffe, 0x0191, 0x0004, 0x0010, 0x01f4, 0x0000, 0xffff, 
+    0xfffe, 0x0192, 0x0004, 0x0010, 0x01f5, 0x0000, 0xffff
+END
+
+IDR_Flipper_Main_MENUBAR RCDATA 
+BEGIN
+    0x0190, 0x0002, 0xfffe, 0x0191, 0x0004, 0x0010, 0x0000, 0x0000, 0xffff, 
+    0xfffe, 0x0192, 0x0004, 0x0010, 0x01f6, 0x0000, 0xffff
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    APPLET_NAME             "MobileSrc Flipper"
+    APPLET_DESC             "Settings for MobileSrc Flipper"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_Flipper_ACCEPT      "Save"
+    IDS_Flipper_CANCEL      "Cancel"
+    IDS_Flipper_Register    "Register"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

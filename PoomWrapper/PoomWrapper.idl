@@ -1,0 +1,20 @@
+// PoomWrapper.idl : IDL source for PoomWrapper
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (PoomWrapper.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(C65EBC7A-5493-421C-BA93-00E7EF021FC9),
+	version(1.0),
+	helpstring("PoomWrapper 1.0 Type Library")
+]
+library PoomWrapperLib
+{
+	importlib("stdole2.tlb");
+	interface IDocHostUIHandlerDispatch;
+	interface IAxWinAmbientDispatchEx;
+};

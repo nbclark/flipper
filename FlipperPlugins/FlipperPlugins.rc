@@ -1,0 +1,208 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LISTEDITOR DIALOG  0, 0, 162, 162
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         IDC_LIST_SPEEDDIAL,7,7,100,148,LBS_SORT | LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move Up",IDC_BUTTON_MOVEUP,117,7,38,14,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Move Down",IDC_BUTTON_MOVEDOWN,117,21,38,14,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE,117,36,38,14,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,117,141,38,14,BS_NOTIFY
+END
+
+IDD_DIALOG_TASKMANAGER DIALOG  0, 0, 162, 162
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE,117,22,38,14,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,117,7,38,14,BS_NOTIFY
+    LISTBOX         IDC_LIST_TASKMANAGER,7,7,100,122,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable Thumbnails",IDC_CHECK_ENABLETHUMBNAILS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,145,148,10
+END
+
+IDD_SELECTLINK_DIALOG DIALOG  0, 0, 174, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_LIST_LINK,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,24,160,181
+    EDITTEXT        IDC_EDIT_LINK,7,7,160,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_WEATHER DIALOG  0, 0, 162, 162
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_ZIP,7,7,129,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_BUTTON_ADD,"Static",SS_BITMAP | SS_NOTIFY | WS_TABSTOP,140,7,14,14
+    LTEXT           "",IDC_STATIC_RESOLVE,7,22,148,13
+    LTEXT           "Enter in the Zip Code or City name of the desired location, then press the add button.",IDC_STATIC_WEATHER,7,41,148,95
+END
+
+IDD_DIALOG_CLOCK DIALOG  0, 0, 162, 162
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_TIMEZONE,7,7,148,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_Flipper_SET_MENUBAR RCDATA 
+BEGIN
+    0x0190, 0x0002, 0xfffe, 0x0191, 0x0004, 0x0010, 0x01f4, 0x0000, 0xffff, 
+    0xfffe, 0x0192, 0x0004, 0x0010, 0x01f5, 0x0000, 0xffff
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_LISTEDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_DIALOG_TASKMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_SELECTLINK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOG_WEATHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_DIALOG_CLOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "..\\..\\Flipper\\FlipperConfig\\images\\app.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ADD                 BITMAP                  "images\\add_small.bmp"
+IDB_ADDHOVER            BITMAP                  "images\\add_small_hover.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_Flipper_ACCEPT      "Accept"
+    IDS_Flipper_CANCEL      "Cancel"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

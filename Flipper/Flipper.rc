@@ -1,0 +1,141 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FLIPPER DIALOG  0, 0, 120, 160
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | WS_POPUP
+FONT 14, "Microsoft Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "app.ico"
+IDR_MAINICON            ICON                    "..\\flipperlogo3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FLIPPER, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 34
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_Flipper_SET_MENUBAR RCDATA 
+BEGIN
+    0x0190, 0x0002, 0xfffe, 0x0191, 0x0004, 0x0010, 0x01f4, 0x0000, 0xffff, 
+    0xfffe, 0x0192, 0x0004, 0x0010, 0x01f5, 0x0000, 0xffff
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_APP                 BITMAP                  "app.bmp"
+IDB_DESKTOP             BITMAP                  "desktop.bmp"
+IDB_CURSORSMALL         BITMAP                  "Cursors\\cursor_white-24.bmp"
+IDB_CUROSRMED           BITMAP                  "Cursors\\cursor_white-32.bmp"
+IDB_CURSORLARGE         BITMAP                  "Cursors\\cursor_white-48.bmp"
+IDB_WHEEL               BITMAP                  "images\\wheel.bmp"
+IDB_HOME                BITMAP                  "images\\home.bmp"
+IDB_END                 BITMAP                  "images\\end.bmp"
+IDB_CALL                BITMAP                  "images\\call.bmp"
+IDB_BACK                BITMAP                  "images\\back.bmp"
+IDB_SM_WHEEL            BITMAP                  "images\\white\\wheel.bmp"
+IDB_SM_HOME             BITMAP                  "images\\white\\home.bmp"
+IDB_SM_END              BITMAP                  "images\\white\\end.bmp"
+IDB_SM_CALL             BITMAP                  "images\\white\\call.bmp"
+IDB_SM_BACK             BITMAP                  "images\\white\\back.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
